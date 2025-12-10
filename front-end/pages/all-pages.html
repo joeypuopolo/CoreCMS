@@ -1,0 +1,8 @@
+<div v-scope="allPagesComponent()">
+    <h1>All Pages</h1>
+    <ul>
+        <li v-for="page in pages">
+            <strong>{{ page.title }}</strong> - <em>{{ page.url }}</em>
+        </li>
+    </ul>
+</div>

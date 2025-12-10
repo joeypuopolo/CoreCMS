@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="loadPage('all-pages.html')">All Pages</button>
+        <button onclick="loadPage('single-page.html')">Single Page</button>
+        <button onclick="loadPage('templates.html')">Templates</button>
+        <button onclick="loadPage('all-blocks.html')">All Blocks</button>
+    </nav>
+
+    <div id="content"> <!-- This is where views will be loaded --> </div>
+</body>
+</html>

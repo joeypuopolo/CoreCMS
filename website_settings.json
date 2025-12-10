@@ -1,0 +1,26 @@
+{
+  "site_name": "My Website",
+  "site_description": "A brief description of my website",
+  "site_url": "https://example.com",
+  "admin_email": "admin@example.com",
+  "contact_email": "contact@example.com",
+  "social_media": {
+    "twitter": "https://twitter.com/mywebsite",
+    "facebook": "https://facebook.com/mywebsite",
+    "instagram": "https://instagram.com/mywebsite"
+  },
+  "analytics": {
+    "google_analytics_id": "UA-123456789-1"
+  },
+  "security": {
+    "ssl_enabled": true,
+    "ssl_certificate": "/path/to/ssl/certificate",
+    "ssl_key": "/path/to/ssl/key"
+  },
+  "database": {
+    "host": "localhost",
+    "username": "mydatabaseuser",
+    "password": "mydatabasepassword",
+    "database_name": "mydatabase"
+  }
+}

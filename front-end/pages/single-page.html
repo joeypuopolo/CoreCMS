@@ -1,0 +1,9 @@
+<div v-scope="singlePageComponent()">
+    <h1>Editing: {{ pageTitle }}</h1>
+    <div v-for="block in blocks">
+        <textarea v-model="block.content"></textarea>
+        <button @click="block.hidden = !block.hidden">
+            {{ block.hidden ? 'Show' : 'Hide' }}
+        </button>
+    </div>
+</div>
