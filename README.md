@@ -1,40 +1,25 @@
 # CoreCMS — A Database-Driven Content Management System in Go
 
-CoreCMS is a custom content management system built with Go, Chi, and a database-driven templating architecture.
-Its core features include dynamic page creation, template inheritance, nestable code blocks, and an inline-editable admin panel.
-This project serves both as a functional CMS and an exercise in full-stack engineering.
+CoreCMS is a custom content management system built with Go and Chi. Its architecture is inspired by all the CMS systems I've worked in, and so it reflects the way I think about websites. This code is not yet completed, but this README file is an attempt to explain all its current and future features. 
+
+Additionally, this project was an exercise in practicing/learning a new language. I think if this were to go into actual use/production, this would best be written in PHP, that way we could easily run this on a low-cost shared hosting environment with default settings, which reflects the needs of typical website clients. However with this Go version, a great use case for this CMS could be hosting an app within a client's website as this CMS has that flexibility.
 
 
 ## Key Features
 
-- Database-driven pages: Create pages programmatically with stored routes, content types, and JSON content structures.
-- Template system: All templates are structured for inheritance, and can be stored in the database for dynamic rendering.
-- Nestable CodeBlocks: Code blocks editable by a web developer to build a website project. They can render inside templates or other code blocks.
+- Database-driven: All website code is stored in the database.
+- Everything is template based: All templates, pages and code components are structured for inheritance, and they are stored in the database for dynamic rendering.
+- Pages: Every page loads an associated template.
+- Templates: Every template loads associated code components.
+- Nestable CodeBlocks: Code components, called CodeBlocks, are editable by a web developer to build a website project. They render inside templates, pages or other code blocks. Website admin users have a UI to sort/add/remove CodeBlocks from the template and page views.
+- Inherent unpublished system: The website is all served from a separate database table that stores all the compiled data and content for each page.
 
 
 ## Admin Panel Features:
 
-- CRUD for pages, templates, and code blocks
-- Allow page ordering, naming, routing, hierarchy and visibility toggles
-- Login/session management
+The main admin panel has an easy UI that allows website admins to rename pages, sort them, set up page hierarchies, set pages to inactive to the public or hidden, customize the routing and swap page templates. For the customer's web developer, they can easily add and assemble code components to load on the website.
 
 
-## Why I Chose Go for This Project
-
-I intentionally chose Go over more traditional web languages (like PHP, Node, Python etc.) for three reasons:
-
-#### 1. Performance & Simplicity
-
-Go is faster than the alternatives, and that was going to matter for this project. For a CMS that is serving many dynamic routes, dynamic pages, and dynamic HTML code, Go would offer scalability for any website size with less effect on render speed than other popular web.
-
-#### 2. Exercise in a New Language
-
-I wanted to deepen my backend engineering skills by working in a different language with familiar constructs. Go is very simple and I love their alternative of being "object oriented" using structs.
-
-#### 3. Compiled Binary File (Protecting Source Code)
-
-Because Go compiles to a self-contained binary, I can distribute this CMS to potential clients without exposing the source code.
-This makes it possible to license out a custom CMS product while still protecting the underlying IP.
 
 ## Technologies Used
 
