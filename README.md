@@ -26,6 +26,6 @@ The main admin panel has an easy UI that allows website admins to rename pages, 
 - Go (Golang)
 - Chi router
 - Go html/template engine
-- SQL (Currently using SQLite, but in deployment can use PostgreSQL)
+- SQL (Currently using SQLite, but in deployment can use PostgreSQL or MariaDB)
 - Vanilla JS for admin UI
 - go-session for login sessions
